@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+
+:root {
+  --color-bg: #fdfcfa;
+  --color-accent: #d4b4f3; /* Lavande douce */
+  --color-text: #333;
+  --color-subtle: #999;
+  --color-border: #eee;
+  --radius: 16px;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  padding: 2rem;
+}
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+}
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+  border: 4px solid white;
+  margin-bottom: 1rem;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #994bba;
+}
+p {
+  font-size: 1rem;
+  color: var(--color-subtle);
+}
+
+/* Projects */
+.projects {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.project-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  background: white;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease;
+}
+.project-card:hover {
+  transform: translateY(-4px);
+}
+.project-card h2 {
+  font-size: 1.2rem;
+  color: #994bba;
+  margin-bottom: 0.5rem;
+}
+.project-card a {
+  color: #994bba;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-subtle);
+  margin-top: 4rem;
+}
+footer a {
+  margin: 0 0.5rem;
+  color: #994bba;
+  text-decoration: none;
+}
