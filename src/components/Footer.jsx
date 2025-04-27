@@ -1,9 +1,13 @@
-function Footer() {
+function Footer({ language }) {
   return (
     <footer>
       <p>© {new Date().getFullYear()} Mandana Pelletier</p>
       <p>
-        <a href="mailto:mandana-6@live.ca">Me contacter</a>
+        {language === "fr" ? (
+          <a href="mailto:mandana-6@live.ca">Me contacter</a>
+        ) : (
+          <a href="mailto:mandana-6@live.ca">Contact</a>
+        )}
         <a
           href="https://www.linkedin.com/in/mandana-pelletier-10677292"
           target="_blank"
