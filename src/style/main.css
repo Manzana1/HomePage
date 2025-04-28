@@ -26,6 +26,23 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
+
+.app button {
+  color: #994bba;
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  padding: 3px;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  background: white;
+  margin-right: 2px;
+}
+
+.app button:hover {
+  transform: translateY(-4px);
+}
+
 header {
   text-align: center;
   margin-bottom: 3rem;
