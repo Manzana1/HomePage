@@ -14,7 +14,7 @@ function Projects() {
     },
     {
       title: "Projet de création d'API avec Tailwind",
-      url: "https://ton-projet-3.vercel.app",
+      url: "https://countries-data-psi.vercel.app/",
       description: "En cours...",
     },
   ];
