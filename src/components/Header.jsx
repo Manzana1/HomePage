@@ -10,7 +10,7 @@ function Header({ language }) {
       ) : (
         <h1>Welcome to my profile</h1>
       )}
-      <p>
+      <p id="about">
         {language === "fr"
           ? "Développeuse web en quête constante de nouveaux défis."
           : "Web developer constantly seeking new challenges."}

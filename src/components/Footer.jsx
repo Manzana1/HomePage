@@ -1,6 +1,6 @@
 function Footer({ language }) {
   return (
-    <footer>
+    <footer id="contact">
       <p>© {new Date().getFullYear()} Mandana Pelletier</p>
       <p>
         {language === "fr" ? (

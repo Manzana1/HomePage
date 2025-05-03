@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
@@ -7,15 +8,9 @@ import Footer from "./components/Footer";
 function App() {
   const [language, setLanguage] = useState("fr");
 
-  const handleLanguageChange = (lang) => {
-    setLanguage(lang);
-  };
-
   return (
     <div className="app">
-      <button onClick={() => handleLanguageChange("fr")}>Français</button>
-      <button onClick={() => handleLanguageChange("en")}>English</button>
-
+      <Navbar language={language} setLanguage={setLanguage} />
       <Header language={language} />
       <Projects language={language} />
       <Footer language={language} />
