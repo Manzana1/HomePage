@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Navbar({ language, setLanguage }) {
+function Navbar({ language, onLanguageChange }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
@@ -26,13 +26,13 @@ function Navbar({ language, setLanguage }) {
         </li>
         <li className="lang-switch">
           <button
-            onClick={() => setLanguage("fr")}
+            onClick={() => onLanguageChange("fr")}
             className={language === "fr" ? "active" : ""}
           >
             FR
           </button>
           <button
-            onClick={() => setLanguage("en")}
+            onClick={() => onLanguageChange("en")}
             className={language === "en" ? "active" : ""}
           >
             EN

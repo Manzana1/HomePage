@@ -1,35 +1,55 @@
-function Projects() {
+import React from "react";
+
+function Projects({ language }) {
   const projects = [
     {
-      title: "🌱 Boutique de plantes",
+      title: {
+        fr: "🌱 Boutique de plantes",
+        en: "🌱 Plant shop",
+      },
       url: "https://urban-roots-fawn.vercel.app/",
-      description:
-        "Une boutique en ligne faite avec React, incluant un panier dynamique.",
+      description: {
+        fr: "Une boutique en ligne faite avec React, incluant un panier dynamique.",
+        en: "An online store built with React, featuring a dynamic shopping cart.",
+      },
     },
     {
-      title: "🍪 Minuteur à Biscuits",
+      title: {
+        fr: "🍪 Minuteur à Biscuits",
+        en: "🍪 Cookie Timer",
+      },
       url: "https://biscuit-timer.vercel.app/",
-      description:
-        "Un petit projet React où chaque étape d’une recette de biscuits démarre un compte à rebours personnalisé.",
+      description: {
+        fr: "Un petit projet React où chaque étape d’une recette de biscuits démarre un compte à rebours personnalisé.",
+        en: "A small React project where each step of a cookie recipe starts a custom countdown.",
+      },
     },
     {
-      title: "Projet de création d'API avec Tailwind",
+      title: {
+        fr: "🌎 Projet de création d'API avec Tailwind",
+        en: "🌎 API Project with Tailwind",
+      },
       url: "https://countries-data-psi.vercel.app/",
-      description: "En cours...",
+      description: {
+        fr: "En cours...",
+        en: "In progress...",
+      },
     },
   ];
 
   return (
     <section id="projects" className="projects">
-      {projects.map((project, index) => (
-        <div className="project-card" key={index}>
-          <h2>{project.title}</h2>
-          <p>{project.description}</p>
-          <a href={project.url} target="_blank" rel="noopener noreferrer">
-            Voir le projet →
-          </a>
-        </div>
-      ))}
+      <h2>{language === "fr" ? "Mes projets" : "My projects"}</h2>
+      <ul>
+        {projects.map((project, index) => (
+          <li className="project-card" key={index}>
+            <a href={project.url} target="_blank" rel="noopener noreferrer">
+              <h3>{project.title[language]}</h3>
+            </a>
+            <p>{project.description[language]}</p>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }

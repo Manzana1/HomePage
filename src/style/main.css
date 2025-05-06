@@ -160,6 +160,10 @@ p {
   justify-content: space-evenly;
 }
 
+.projects li {
+  list-style: none;
+}
+
 .project-card {
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
@@ -171,10 +175,11 @@ p {
 .project-card:hover {
   transform: translateY(-4px);
 }
-.project-card h2 {
-  font-size: 1.2rem;
+.projects h2 {
+  font-size: 1.6rem;
   color: #994bba;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 .project-card a {
   color: #994bba;
