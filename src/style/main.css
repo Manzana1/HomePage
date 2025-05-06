@@ -153,15 +153,16 @@ p {
 }
 
 /* Projects */
-.projects {
+
+.projects li {
+  list-style: none;
+}
+
+.projects ul {
   display: grid;
   gap: 1.5rem;
   margin-bottom: 3rem;
   justify-content: space-evenly;
-}
-
-.projects li {
-  list-style: none;
 }
 
 .project-card {
