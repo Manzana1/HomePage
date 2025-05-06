@@ -7,8 +7,7 @@ function Navbar({ language, setLanguage }) {
 
   return (
     <nav className="nav">
-      <img src="/public/logo.svg" alt="Logo" className="logo" />
-
+      <img src="/logo.svg" alt="Logo" className="logo" />
       <button className="hamburger" onClick={toggleMenu}>
         ☰
       </button>
