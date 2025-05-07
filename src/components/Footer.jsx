@@ -5,11 +5,14 @@ function Footer({ language }) {
       <p className="contact-link">
         {language === "fr" ? (
           <a href="mailto:mandana-6@live.ca">
-            Contact <br></br>
+            Contact <br />
             <img src="/mail.png" alt="email" className="email-icon" />
           </a>
         ) : (
-          <a href="mailto:mandana-6@live.ca">Contact</a>
+          <a href="mailto:mandana-6@live.ca">
+            Contact <br />
+            <img src="/mail.png" alt="email" className="email-icon" />
+          </a>
         )}
         ·
         <a
