@@ -52,6 +52,15 @@ body {
   position: relative;
   margin-bottom: 3rem;
 }
+
+.nav li {
+  transition: transform 0.2s ease;
+}
+
+.nav li:hover {
+  transform: translateY(-4px);
+}
+
 .logo {
   width: 50px;
   height: 50px;
@@ -156,6 +165,7 @@ p {
 
 .projects li {
   list-style: none;
+  width: 600px;
 }
 
 .projects ul {
