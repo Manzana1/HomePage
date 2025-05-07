@@ -165,7 +165,7 @@ p {
 
 .projects li {
   list-style: none;
-  width: 600px;
+  max-width: 600px;
 }
 
 .projects ul {
@@ -204,9 +204,30 @@ footer {
   font-size: 0.9rem;
   color: var(--color-subtle);
   margin-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
 }
 footer a {
   margin: 0 0.5rem;
   color: #994bba;
   text-decoration: none;
+}
+
+.contact-link {
+  display: inline-flex;
+}
+
+.linkedin-icon,
+.email-icon,
+.external-link-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  footer {
+    display: block;
+  }
 }
