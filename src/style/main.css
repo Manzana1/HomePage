@@ -216,13 +216,20 @@ footer a {
 
 .contact-link {
   display: inline-flex;
+  transition: transform 0.2s ease;
+}
+.contact-link a {
+  transition: transform 0.2s ease;
+}
+.contact-link a:hover {
+  transform: translateY(-4px);
 }
 
 .linkedin-icon,
 .email-icon,
 .external-link-icon {
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
 }
 
 /* Mobile */

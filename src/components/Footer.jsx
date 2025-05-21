@@ -11,7 +11,12 @@ function Footer({ language }) {
         ) : (
           <a href="mailto:mandana-6@live.ca">
             Contact <br />
-            <img src="/mail.png" alt="email" className="email-icon" />
+            <img
+              src="/mail.png"
+              alt="email"
+              className="email-icon"
+              title="Contact"
+            />
           </a>
         )}
         ·
