@@ -38,12 +38,12 @@ function Projects({ language }) {
     {
       title: {
         fr: "🌤️ Application Météo sur 5 Jours",
-        en: "🌎 API Project with Tailwind",
+        en: "🌤️ 5-Day Weather App",
       },
       url: "https://meteo-app-pi.vercel.app/",
       description: {
         fr: "Application météo moderne développée avec React, TypeScript et Vite. Elle permet de consulter la température actuelle ainsi qu'une prévision sur 5 jours, grâce à l'intégration de l'API d’OpenWeather.",
-        en: "In progress...",
+        en: "Modern weather app developed with React, TypeScript, and Vite. It allows users to check the current temperature as well as a 5-day forecast, thanks to the integration of the OpenWeather API.",
       },
     },
   ];
