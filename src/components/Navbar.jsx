@@ -39,21 +39,6 @@ function Navbar({ language, onLanguageChange }) {
           </button>
         </li>
       </ul>
-
-      {/* <div className="lang-switch">
-        <button
-          onClick={() => setLanguage("fr")}
-          className={language === "fr" ? "active" : ""}
-        >
-          FR
-        </button>
-        <button
-          onClick={() => setLanguage("en")}
-          className={language === "en" ? "active" : ""}
-        >
-          EN
-        </button>
-      </div> */}
     </nav>
   );
 }
