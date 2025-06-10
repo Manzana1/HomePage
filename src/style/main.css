@@ -147,7 +147,7 @@ header img {
   margin-bottom: 1rem;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 600;
   color: #994bba;
   translate: none;
@@ -155,6 +155,9 @@ h1 {
   scale: none;
   transform: translate(0px, 0px);
   opacity: 1;
+}
+#about {
+  font-size: 20px;
 }
 p {
   font-size: 1rem;
